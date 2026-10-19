@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardianes del Paushiyaku | Plataforma Oficial de Restauración y Gobernanza Hídrica</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="assets/img/logos/yaku_wasi_logo.png">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Barra Superior de Marca Institucional
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <img src="assets/img/logos/logo_institucional.png" alt="Logo Institucional Ikiam Tena" class="brand-logo-img">
+        <div class="brand-headings">
+          <h1>Guardianes del Paushiyaku</h1>
+          <span>Restauración Ecohidrológica &bull; Tena, Amazonía &bull; IKIAM & GAD Tena</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="visor.html" target="_blank" class="btn btn-primary" title="Abrir Visor Geoespacial en pestaña completa">
+          <span>🗺️</span> <span>Visor WebGIS</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Barra de Pestañas Amigables (Friendly Tabs Navigation)
+       ======================================================================== -->
+  <nav class="main-tabs-nav-wrapper">
+    <div class="container">
+      <div class="tabs-nav-container">
+        <button class="tab-link active" data-tab="tab-proyecto">
+          <span class="tab-icon">🌿</span> <span>Proyecto & Visión</span>
+        </button>
+        <button class="tab-link" data-tab="tab-diagnostico">
+          <span class="tab-icon">🔬</span> <span>Diagnóstico & Datos</span>
+        </button>
+        <button class="tab-link" data-tab="tab-galeria">
+          <span class="tab-icon">📸</span> <span>Galería de Fotos</span>
+        </button>
+        <button class="tab-link" data-tab="tab-equipo">
+          <span class="tab-icon">👥</span> <span>Nuestro Equipo</span>
+        </button>
+        <button class="tab-link" data-tab="tab-visor">
+          <span class="tab-icon">🗺️</span> <span>Visor Geoespacial</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       CONTENIDO DE LAS PESTAÑAS
+       ======================================================================== -->
+  <main class="main-content">
+
+    <!-- ====================================================================
+         PESTAÑA 1: VISIÓN GENERAL Y PROYECTO
+         ==================================================================== -->
+    <div id="tab-proyecto" class="tab-pane active">
+      
+      <!-- Hero de Bienvenida -->
+      <section class="hero-friendly">
+        <div class="container hero-friendly-content">
+          <div class="badge-friendly">
+            <span>🌱</span> Proyecto Oficial de Vinculación con la Sociedad &bull; IKIAM &bull; GAD Tena
+          </div>
+          <h2>
+            Restauración Ecohidrológica y Participativa del <span>Estero Paushiyaku</span>
+          </h2>
+          <p>
+            Evidencia científica de alta precisión (LiDAR, HEC-RAS 2D, monitoreo de agua) integrada con acción comunitaria, educación ambiental y gobernanza local para recuperar el principal corredor fluvial urbano de Tena.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" data-switch-tab="tab-diagnostico">
+              <span>🔬</span> Explorar Diagnóstico & Evidencia
+            </button>
+            <button class="btn btn-outline-white" data-switch-tab="tab-galeria">
+              <span>📸</span> Ver Galería de Fotografías
+            </button>
+            <button class="btn btn-outline-white" data-switch-tab="tab-equipo">
+              <span>👥</span> Conocer al Equipo
+            </button>
+          </div>
+          <div class="hero-allies-bar">
+            <span><strong>Promueve:</strong> Universidad Regional Amazónica IKIAM</span>
+            <span>&bull;</span>
+            <span><strong>Aliados:</strong> GAD Municipal de Tena &bull; GAD Provincial de Napo &bull; U.E. Maximiliano Spiller</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cinta de Métricas Animadas -->
+      <section class="metrics-section">
+        <div class="container">
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-icon">🏔️</div>
+              <div class="metric-num" data-target="486.2">0</div>
+              <div class="metric-label">Hectáreas de Cuenca</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">🌊</div>
+              <div class="metric-num" data-target="5.4">0</div>
+              <div class="metric-label">km de Cauce Modelado</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">🧪</div>
+              <div class="metric-num" data-target="9">0</div>
+              <div class="metric-label">Estaciones de Calidad</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">⚠️</div>
+              <div class="metric-num" data-target="24">0</div>
+              <div class="metric-label">Descargas Residuales</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">📐</div>
+              <div class="metric-num" data-target="134">0</div>
+              <div class="metric-label">Predios en Retiro (30m)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">🏠</div>
+              <div class="metric-num" data-target="149">0</div>
+              <div class="metric-label">Viviendas en Riesgo</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">🌿</div>
+              <div class="metric-num" data-target="754">0</div>
+              <div class="metric-label">Zonas de Restauración EMC</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">🏘️</div>
+              <div class="metric-num" data-target="14">0</div>
+              <div class="metric-label">Barrios Involucrados</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Identidad Estratégica -->
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-pill">Bases Estratégicas</span>
+            <h3 class="section-title">Identidad del Proyecto</h3>
+            <p class="section-desc">
+              Uniendo la investigación científica de frontera con el empoderamiento ciudadano y la gestión pública cantonal.
+            </p>
+          </div>
+
+          <div class="identity-cards-grid">
+            <div class="friendly-card">
+              <div class="card-icon-bubble">🎯</div>
+              <h3>Propósito</h3>
+              <p>
+                Articular el diagnóstico técnico-científico riguroso (hidrología, hidráulica 2D, sensores remotos LiDAR y calidad de agua) con la acción participativa de las comunidades ribereñas, generando evidencia verificable que retroalimente la gestión municipal y movilice procesos de restauración socioecológica fluvial sostenibles en el tiempo.
+              </p>
+            </div>
+
+            <div class="friendly-card">
+              <div class="card-icon-bubble">🌱</div>
+              <h3>Misión</h3>
+              <p>
+                Generar conocimiento científico-técnico aplicable, empoderar a la comunidad educativa y barrial mediante la ciencia ciudadana y la gobernanza hídrica colaborativa, y co-diseñar instrumentos de planificación territorial y restauración ecológica que recuperen la integridad ecosistémica y la salud pública en la cuenca del estero Paushiyaku.
+              </p>
+            </div>
+
+            <div class="friendly-card">
+              <div class="card-icon-bubble">🔭</div>
+              <h3>Visión</h3>
+              <p>
+                Convertir al estero Paushiyaku en el modelo amazónico de referencia de río urbano restaurado, donde la convivencia armónica entre el desarrollo urbano del cantón Tena y la biodiversidad ribereña sea salvaguardada por una ciudadanía informada, una administración municipal comprometida y normativas eficaces.
+              </p>
+            </div>
+          </div>
+
+          <!-- Objetivos Específicos -->
+          <div class="section-head" style="margin-top: 50px;">
+            <span class="section-pill">Componentes Operativos</span>
+            <h3 class="section-title">Objetivos Estratégicos</h3>
+            <p class="section-desc">
+              Tres pilares complementarios para transformar la problemática del estero en soluciones tangibles y sostenibles.
+            </p>
+          </div>
+
+          <div class="objectives-cards-grid">
+            <div class="obj-card">
+              <span class="obj-tag">Pilar 1</span>
+              <h4>Línea Base Ecohidrosocial</h4>
+              <p>
+                Consolidar la línea base del estero mediante la identificación georreferenciada de 24 fuentes de contaminación, evaluación de vulnerabilidad hidráulica con LiDAR de 0.25m y caracterización socioambiental en los 14 barrios ribereños.
+              </p>
+            </div>
+
+            <div class="obj-card">
+              <span class="obj-tag">Pilar 2</span>
+              <h4>Participación & Educación Continua</h4>
+              <p>
+                Implementar procesos de fortalecimiento de capacidades con los barrios y la comunidad educativa de la Unidad Educativa Monseñor Maximiliano Spiller, promoviendo la ciencia ciudadana a través de la iniciativa "Yaku Wasi".
+              </p>
+            </div>
+
+            <div class="obj-card">
+              <span class="obj-tag">Pilar 3</span>
+              <h4>Plan Integral de Restauración</h4>
+              <p>
+                Desarrollar y socializar un Plan de Acción Integral articulando Soluciones Basadas en la Naturaleza (SbN), bioingeniería de taludes, intercepción de colectores sanitarios y una ordenanza municipal para el retiro hídrico legal de 30 metros.
+              </p>
+            </div>
+          </div>
+
+          <!-- Línea de Tiempo de 6 Meses -->
+          <div class="section-head" style="margin-top: 50px;">
+            <span class="section-pill">Ruta Metodológica</span>
+            <h3 class="section-title">Hitos Cumplidos en los 6 Meses de Ejecución</h3>
+            <p class="section-desc">
+              Proceso sistemático de investigación aplicada, modelación numérica y trabajo de campo participativo.
+            </p>
+          </div>
+
+          <div class="timeline-friendly">
+            <div class="timeline-item left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-box">
+                <div class="timeline-month">Mes 1 &bull; Diagnóstico de Campo</div>
+                <h4 class="timeline-title">Línea Base y Calidad de Agua</h4>
+                <p class="timeline-desc">
+                  Muestreo sistemático en 9 estaciones físico-químicas e hidrobiológicas (DQO, OD, coliformes fecales, turbidez, pH). Catálogo y georreferenciación de 24 descargas residuales sin tratamiento a lo largo del cauce fluvial.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-box">
+                <div class="timeline-month">Mes 2 &bull; Modelación Numérica</div>
+                <h4 class="timeline-title">LiDAR 0.25m y Modelación HEC-RAS</h4>
+                <p class="timeline-desc">
+                  Procesamiento de nube de puntos LiDAR aerotransportada y DTM de alta resolución. Modelación hidráulica 1D/2D para TR 50 años, cálculo de calados y cruce con 134 predios catastrales y 149 viviendas en riesgo de inundación y retiro de 30m.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-box">
+                <div class="timeline-month">Mes 3 &bull; Vinculación Comunitaria</div>
+                <h4 class="timeline-title">Talleres Participativos & U.E. Spiller</h4>
+                <p class="timeline-desc">
+                  Encuentros comunitarios con líderes barriales y talleres pedagógicos con docentes y estudiantes de la U.E. Monseñor Maximiliano Spiller. Co-construcción de mapas de problemas y lanzamiento de la iniciativa educativa "Yaku Wasi".
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-box">
+                <div class="timeline-month">Mes 4 &bull; Análisis Espacial Multicriterio</div>
+                <h4 class="timeline-title">Zonificación de Restauración EMC</h4>
+                <p class="timeline-desc">
+                  Clasificación nDSM de estratos de vegetación ribereña (herbáceo, arbustivo, arbóreo). Evaluación Multicriterio Espacial (EMC) delimitando 754 polígonos según nivel de prioridad: Crítica, Alta, Asistida y Conservación Estricta.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-box">
+                <div class="timeline-month">Mes 5 &bull; Planificación Estratégica</div>
+                <h4 class="timeline-title">Plan de Acción Integral & SbN</h4>
+                <p class="timeline-desc">
+                  Formulación de la cartera de intervenciones técnicas: bioingeniería en márgenes inestables, intercepción de colectores de aguas servidas al alcantarillado municipal, senderos ecológicos y propuesta de ordenanza municipal para el retiro de 30m.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-box">
+                <div class="timeline-month">Mes 6 &bull; Transferencia Oficial</div>
+                <h4 class="timeline-title">Socialización y Entrega a Actores</h4>
+                <p class="timeline-desc">
+                  Entrega formal del compendio técnico, la base de datos GeoPackage consolidada y la cartografía temática oficial a las autoridades del GAD Municipal de Tena, GAD Provincial de Napo y representantes de los barrios ribereños.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navegación al final de la pestaña -->
+          <div class="tab-navigation-footer">
+            <div></div>
+            <button class="btn-nav-tab primary-nav" data-switch-tab="tab-diagnostico">
+              <span>Siguiente: Diagnóstico & Datos Científicos</span> <span>&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- ====================================================================
+         PESTAÑA 2: DIAGNÓSTICO & DATOS
+         ==================================================================== -->
+    <div id="tab-diagnostico" class="tab-pane">
+      
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-pill">Evidencia Técnica Rigurosa</span>
+            <h3 class="section-title">Diagnóstico Ecohidrológico y Calidad del Agua</h3>
+            <p class="section-desc">
+              Resultados del monitoreo in-situ y de laboratorio a lo largo de los 5.4 km del cauce del estero Paushiyaku en Tena.
+            </p>
+          </div>
+
+          <!-- Resumen y Perfil Longitudinal -->
+          <div class="diag-two-cols">
+            <div class="diag-summary-box">
+              <h3>Evaluación frente a la Norma TULSMA</h3>
+              <p>
+                Los análisis en las 9 estaciones de monitoreo a lo largo del gradiente rural-urbano demuestran que, al ingresar a los barrios consolidados de Tena, los parámetros orgánicos y bacteriológicos superan ampliamente los Límites Máximos Permisibles (LMP):
+              </p>
+              <ul class="diag-bullets-friendly">
+                <li><strong>Coliformes Fecales:</strong> Superan hasta en 2 órdenes de magnitud la norma debido a 24 descargas residuales sin tratamiento.</li>
+                <li><strong>Demanda Química de Oxígeno (DQO):</strong> Picos severos aguas abajo de puentes y sectores con deficiente alcantarillado sanitario.</li>
+                <li><strong>Oxígeno Disuelto (OD):</strong> Caídas críticas por debajo de 3 mg/L en pozas urbanas, provocando anoxia y asfixia biológica de la fauna acuática.</li>
+                <li><strong>Erosión Ribereña:</strong> Pérdida masiva de cobertura arbórea nativa y desestabilización de taludes que amenazan viviendas.</li>
+              </ul>
+              <button class="btn btn-primary" data-switch-tab="tab-visor">
+                <span>🗺️</span> Ver Estaciones y Descargas en el Visor
+              </button>
+            </div>
+
+            <div class="diag-img-wrapper">
+              <img src="assets/img/graficas/perfil_longitudinal.png" alt="Perfil Longitudinal de Degradación del Paushiyaku" class="lightbox-trigger" data-full="assets/img/graficas/perfil_longitudinal.png" data-caption="Perfil Longitudinal de Degradación del Estero Paushiyaku a lo largo de 5.4 km (Elevación, calados y descargas)">
+              <div class="diag-caption">
+                🔍 Haga clic para ampliar el Perfil Longitudinal de Degradación (5.4 km)
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla Comparativa TULSMA -->
+          <div class="section-head" style="margin-top: 40px;">
+            <span class="section-pill">Monitoreo Físico-Químico</span>
+            <h3 class="section-title">Comportamiento de Parámetros Clave vs. Límites Normativos</h3>
+          </div>
+
+          <div class="table-responsive-wrapper">
+            <table class="tulsma-table">
+              <thead>
+                <tr>
+                  <th>Parámetro</th>
+                  <th>Unidad</th>
+                  <th>Límite TULSMA (Vida Acuática)</th>
+                  <th>Tramo Alto (Rural)</th>
+                  <th>Tramo Urbano (Consolidado)</th>
+                  <th>Diagnóstico</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Coliformes Fecales</strong></td>
+                  <td>NMP/100 mL</td>
+                  <td>&le; 200</td>
+                  <td>180</td>
+                  <td><strong>&gt; 24,000</strong></td>
+                  <td><span class="badge-status danger">Crítico (24 descargas)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Oxígeno Disuelto (OD)</strong></td>
+                  <td>mg/L</td>
+                  <td>&ge; 6.0</td>
+                  <td>7.8</td>
+                  <td><strong>2.4 - 3.8</strong></td>
+                  <td><span class="badge-status danger">Severo Déficit de Oxígeno</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Demanda Química (DQO)</strong></td>
+                  <td>mg/L</td>
+                  <td>&le; 40</td>
+                  <td>12</td>
+                  <td><strong>128 - 210</strong></td>
+                  <td><span class="badge-status danger">Alta Carga Orgánica</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Demanda Bioquímica (DBO5)</strong></td>
+                  <td>mg/L</td>
+                  <td>&le; 5</td>
+                  <td>2.1</td>
+                  <td><strong>45 - 78</strong></td>
+                  <td><span class="badge-status danger">Contaminación Sanitaria</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Turbidez</strong></td>
+                  <td>NTU</td>
+                  <td>&le; 100</td>
+                  <td>8.5</td>
+                  <td><strong>64 - 110</strong></td>
+                  <td><span class="badge-status warning">Arrastre de Sedimentos</span></td>
+                </tr>
+                <tr>
+                  <td><strong>pH</strong></td>
+                  <td>Unidades</td>
+                  <td>6.5 - 8.5</td>
+                  <td>7.2</td>
+                  <td><strong>6.8 - 7.4</strong></td>
+                  <td><span class="badge-status success">Dentro de Norma</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Zonificación de Restauración EMC -->
+          <div class="section-head" style="margin-top: 50px;">
+            <span class="section-pill">Evaluación Multicriterio Espacial</span>
+            <h3 class="section-title">Zonificación Prioritaria de Restauración (754 Zonas)</h3>
+            <p class="section-desc">
+              Categorización de los márgenes ribereños derivada del cruce de estratos LiDAR, pendientes, descargas y vulnerabilidad hidráulica.
+            </p>
+          </div>
+
+          <div class="emc-grid">
+            <div class="emc-card critica">
+              <h5>Zona Crítica</h5>
+              <div class="emc-area">8.9 Hectáreas &bull; Prioridad 1</div>
+              <p>Márgenes desprovistos de vegetación con descargas directas activas y alto riesgo de socavación de viviendas.</p>
+            </div>
+
+            <div class="emc-card alta">
+              <h5>Zona de Alta Prioridad</h5>
+              <div class="emc-area">24.5 Hectáreas &bull; Prioridad 2</div>
+              <p>Franjas riparias degradadas con estrato herbáceo invasor, susceptibles a deslizamientos durante crecidas de TR 50.</p>
+            </div>
+
+            <div class="emc-card asistida">
+              <h5>Recuperación Pasiva / Asistida</h5>
+              <div class="emc-area">41.2 Hectáreas &bull; Prioridad 3</div>
+              <p>Sectores con remanentes de vegetación secundaria donde la eliminación de presiones antrópicas permite la regeneración.</p>
+            </div>
+
+            <div class="emc-card estricta">
+              <h5>Conservación Estricta</h5>
+              <div class="emc-area">87.3 Hectáreas &bull; Protección Total</div>
+              <p>Bosques riparios densos de cabecera que garantizan la regulación hídrica de la microcuenca; preservación intangible.</p>
+            </div>
+
+            <div class="emc-card conflicto">
+              <h5>Conflicto Socio-Territorial</h5>
+              <div class="emc-area">12.1 Hectáreas &bull; Gestión Especial</div>
+              <p>134 predios y 149 viviendas consolidadas en el retiro legal de 30m; requiere reordenamiento y mitigación de riesgos.</p>
+            </div>
+          </div>
+
+          <!-- Navegación de Pestaña -->
+          <div class="tab-navigation-footer">
+            <button class="btn-nav-tab" data-switch-tab="tab-proyecto">
+              <span>&larr;</span> <span>Anterior: Proyecto & Visión</span>
+            </button>
+            <button class="btn-nav-tab primary-nav" data-switch-tab="tab-galeria">
+              <span>Siguiente: Galería de Fotos</span> <span>&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- ====================================================================
+         PESTAÑA 3: GALERÍA DE FOTOS Y CARTOGRAFÍA
+         ==================================================================== -->
+    <div id="tab-galeria" class="tab-pane">
+      
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-pill">Registro Visual Oficial</span>
+            <h3 class="section-title">Galería Fotográfica y Cartografía de Alta Resolución</h3>
+            <p class="section-desc">
+              Explora las evidencias del proyecto: mapas técnicos oficiales, inspecciones a lo largo del estero y talleres con la comunidad y estudiantes de Tena.
+            </p>
+          </div>
+
+          <!-- Filtros de Subcategorías -->
+          <div class="gallery-subfilters">
+            <button class="filter-btn active" data-filter="all">Todas las Evidencias (22)</button>
+            <button class="filter-btn" data-filter="cartografia">🗺️ Cartografía Oficial</button>
+            <button class="filter-btn" data-filter="talleres">👥 Talleres & Comunidad</button>
+            <button class="filter-btn" data-filter="campo">🌊 Inspecciones de Campo</button>
+            <button class="filter-btn" data-filter="graficas">📊 Gráficas Científicas</button>
+          </div>
+
+          <!-- Cuadrícula de Tarjetas de Galería -->
+          <div class="gallery-cards-grid" id="gallery-grid">
+
+            <!-- 1. MAPAS OFICIALES -->
+            <div class="gallery-card" data-category="cartografia" data-full="assets/img/cartografia/MAPA_01_Marco_Hidrografico_y_Monitoreo.png" data-caption="Mapa 01: Marco Hidrográfico y Red de Monitoreo de Calidad de Agua en la Cuenca del Estero Paushiyaku (486.2 ha)">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/cartografia/MAPA_01_Marco_Hidrografico_y_Monitoreo.png" alt="Mapa 01 Marco Hidrográfico">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Cartografía Oficial</span>
+                <h5 class="gallery-card-title">Mapa 01: Marco Hidrográfico y Monitoreo</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="cartografia" data-full="assets/img/cartografia/MAPA_02_Fuentes_Contaminacion_y_Saneamiento.png" data-caption="Mapa 02: Inventario de Fuentes de Contaminación, Red de Alcantarillado y 24 Descargas Sanitarias Directas">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/cartografia/MAPA_02_Fuentes_Contaminacion_y_Saneamiento.png" alt="Mapa 02 Fuentes Contaminación">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Cartografía Oficial</span>
+                <h5 class="gallery-card-title">Mapa 02: Fuentes de Contaminación y Descargas</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="cartografia" data-full="assets/img/cartografia/MAPA_03_Estratos_Vegetacion_Riparia_LiDAR.png" data-caption="Mapa 03: Clasificación de Estratos de Vegetación Riparia derivada de Modelo nDSM LiDAR de 0.25m">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/cartografia/MAPA_03_Estratos_Vegetacion_Riparia_LiDAR.png" alt="Mapa 03 Estratos Vegetación">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Cartografía Oficial</span>
+                <h5 class="gallery-card-title">Mapa 03: Estratos de Vegetación LiDAR</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="cartografia" data-full="assets/img/cartografia/MAPA_04_Amenaza_Inundacion_y_Predios.png" data-caption="Mapa 04: Amenaza de Inundación TR 50 Años y Conflicto Territorial con 134 Predios Catastrales y 149 Viviendas">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/cartografia/MAPA_04_Amenaza_Inundacion_y_Predios.png" alt="Mapa 04 Amenaza Inundación">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Cartografía Oficial</span>
+                <h5 class="gallery-card-title">Mapa 04: Amenaza de Inundación y Predios</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="cartografia" data-full="assets/img/cartografia/MAPA_05_Zonificacion_Prioritaria_Restauracion_EMC.png" data-caption="Mapa 05: Zonificación Prioritaria de Restauración Socioecológica mediante Evaluación Multicriterio Espacial (754 Polígonos)">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/cartografia/MAPA_05_Zonificacion_Prioritaria_Restauracion_EMC.png" alt="Mapa 05 Zonificación EMC">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Cartografía Oficial</span>
+                <h5 class="gallery-card-title">Mapa 05: Zonificación Prioritaria EMC</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="cartografia" data-full="assets/img/cartografia/propuesta_corte_bioingenieria.png" data-caption="Diseño y Sección Transversal de Bioingeniería para Estabilización de Taludes Fluviales en el Paushiyaku">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/cartografia/propuesta_corte_bioingenieria.png" alt="Bioingeniería Talud">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Diseño Técnico</span>
+                <h5 class="gallery-card-title">Propuesta de Bioingeniería Fluvial</h5>
+              </div>
+            </div>
+
+            <!-- 2. TALLERES Y COMUNIDAD -->
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/campo/foto_taller_auditorio.jpg" data-caption="Taller de Socialización y Gobernanza del Agua con Autoridades y Líderes Barriales de Tena">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_taller_auditorio.jpg" alt="Taller Auditorio">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Participación Comunitaria</span>
+                <h5 class="gallery-card-title">Taller de Socialización en Auditorio</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/campo/foto_taller_mesa_trabajo.jpg" data-caption="Mesa de Trabajo Participativo: Priorización de Acciones con Moradores Ribereños">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_taller_mesa_trabajo.jpg" alt="Mesa de Trabajo">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Participación Comunitaria</span>
+                <h5 class="gallery-card-title">Mesas de Trabajo Participativo</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/talleres/fo_gvi_18_p1.png" data-caption="Talleres Pedagógicos y de Ciencia Ciudadana con Estudiantes de la U.E. Monseñor Maximiliano Spiller">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/talleres/fo_gvi_18_p1.png" alt="Taller Spiller">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Educación &bull; Yaku Wasi</span>
+                <h5 class="gallery-card-title">Taller Educativo en U.E. Spiller</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/talleres/fo_gvi_18_p3.png" data-caption="Mapeo Colectivo de Riesgos y Puntos Críticos Ambientales con Líderes Barriales">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/talleres/fo_gvi_18_p3.png" alt="Mapeo Comunitario">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Ciencia Ciudadana</span>
+                <h5 class="gallery-card-title">Mapeo Participativo Comunitario</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/campo/foto_firma_compromisos.jpg" data-caption="Firma de Compromisos Interinstitucionales para la Restauración del Estero Paushiyaku">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_firma_compromisos.jpg" alt="Firma Compromisos">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Gobernanza Local</span>
+                <h5 class="gallery-card-title">Firma de Acuerdos y Compromisos</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/talleres/Afiche_taller_18_agosto.jpg" data-caption="Afiche Oficial de Convocatoria a Talleres de Restauración y Gobernanza del Agua">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/talleres/Afiche_taller_18_agosto.jpg" alt="Afiche Taller">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Comunicación</span>
+                <h5 class="gallery-card-title">Convocatoria a Talleres Comunitarios</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="talleres" data-full="assets/img/talleres/sociograma_actores_diana.png" data-caption="Sociograma en Diana: Análisis de Poder e Interés de Actores Clave de la Cuenca">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/talleres/sociograma_actores_diana.png" alt="Sociograma Actores">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Gobernanza Social</span>
+                <h5 class="gallery-card-title">Sociograma de Actores en Diana</h5>
+              </div>
+            </div>
+
+            <!-- 3. INSPECCIONES DE CAMPO -->
+            <div class="gallery-card" data-category="campo" data-full="assets/img/campo/foto_rio_paushiyaku_natural.png" data-caption="Tramo Natural del Estero Paushiyaku en la cabecera rural de la microcuenca">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_rio_paushiyaku_natural.png" alt="Paushiyaku Natural">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Tramo Cabecera</span>
+                <h5 class="gallery-card-title">Cauce Fluvial Natural Conservado</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="campo" data-full="assets/img/campo/foto_descarga_p06.jpg" data-caption="Punto de Descarga Sanitaria Directa P06 al lecho fluvial en tramo urbano">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_descarga_p06.jpg" alt="Descarga P06">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Inspección Sanitaria</span>
+                <h5 class="gallery-card-title">Descarga Residual Directa P06</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="campo" data-full="assets/img/campo/foto_erosion_p23.jpg" data-caption="Socavación severa de orilla y pérdida de franja de protección en el sector P23">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_erosion_p23.jpg" alt="Erosión P23">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Geodinámica Fluvial</span>
+                <h5 class="gallery-card-title">Erosión Severa de Riberas P23</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="campo" data-full="assets/img/campo/foto_vivienda_riberena.jpg" data-caption="Vivienda consolidada sobre la franja de retiro hídrico y área de amenaza por crecidas">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_vivienda_riberena.jpg" alt="Vivienda Ribereña">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Conflicto Territorial</span>
+                <h5 class="gallery-card-title">Vivienda en Margen Inundable</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="campo" data-full="assets/img/campo/foto_delimitacion_critica.jpg" data-caption="Inspección de campo para delimitación de zonas críticas de intervención">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/campo/foto_delimitacion_critica.jpg" alt="Delimitación de Campo">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Campo Técnico</span>
+                <h5 class="gallery-card-title">Delimitación de Zonas Críticas</h5>
+              </div>
+            </div>
+
+            <!-- 4. GRÁFICAS CIENTÍFICAS -->
+            <div class="gallery-card" data-category="graficas" data-full="assets/img/graficas/grafica_coliformes.png" data-caption="Evolución de Concentración de Coliformes Fecales a lo largo de las 9 estaciones frente a la Norma TULSMA">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/graficas/grafica_coliformes.png" alt="Gráfica Coliformes">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Calidad de Agua</span>
+                <h5 class="gallery-card-title">Coliformes Fecales vs. TULSMA</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="graficas" data-full="assets/img/graficas/grafica_dqo.png" data-caption="Evolución de la Demanda Química de Oxígeno (DQO) en el gradiente rural-urbano">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/graficas/grafica_dqo.png" alt="Gráfica DQO">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Calidad de Agua</span>
+                <h5 class="gallery-card-title">Demanda Química de Oxígeno (DQO)</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="graficas" data-full="assets/img/graficas/zonificacion_100m.png" data-caption="Distribución de Categorías de Zonificación de Restauración cada 100 metros del cauce">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/graficas/zonificacion_100m.png" alt="Zonificación 100m">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Análisis Espacial</span>
+                <h5 class="gallery-card-title">Zonificación Prioritaria cada 100m</h5>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-category="graficas" data-full="assets/img/graficas/grafica_02_macroinvertebrados.png" data-caption="Índice Biológico BMWP/Col y Diversidad de Familias de Macroinvertebrados Acuáticos">
+              <div class="gallery-card-thumb">
+                <img src="assets/img/graficas/grafica_02_macroinvertebrados.png" alt="Macroinvertebrados">
+                <div class="gallery-zoom-overlay">🔍</div>
+              </div>
+              <div class="gallery-card-meta">
+                <span class="gallery-card-tag">Bioindicadores</span>
+                <h5 class="gallery-card-title">Índice Biológico de Calidad (BMWP)</h5>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Navegación de Pestaña -->
+          <div class="tab-navigation-footer">
+            <button class="btn-nav-tab" data-switch-tab="tab-diagnostico">
+              <span>&larr;</span> <span>Anterior: Diagnóstico & Datos</span>
+            </button>
+            <button class="btn-nav-tab primary-nav" data-switch-tab="tab-equipo">
+              <span>Siguiente: Conocer al Equipo</span> <span>&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- ====================================================================
+         PESTAÑA 4: NUESTRO EQUIPO Y ALIANZAS
+         ==================================================================== -->
+    <div id="tab-equipo" class="tab-pane">
+      
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-pill">Capital Humano y Alianzas</span>
+            <h3 class="section-title">El Equipo de Guardianes del Paushiyaku</h3>
+            <p class="section-desc">
+              Conoce a los docentes investigadores, especialistas técnicos, consultores y líderes comunitarios que hacen posible la recuperación del estero Paushiyaku en Tena.
+            </p>
+          </div>
+
+          <!-- 1. Dirección y Liderazgo Académico (IKIAM) -->
+          <h4 class="team-category-title">
+            <span>🏛️</span> Dirección y Liderazgo Académico &bull; Universidad Regional Amazónica IKIAM
+          </h4>
+
+          <div class="team-cards-grid">
+            <!-- Katherine Armijos -->
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">👩‍🔬</div>
+              </div>
+              <h4 class="team-name">Mgs. Katherine Gabriela Armijos Alcocer</h4>
+              <div class="team-role">Directora del Proyecto</div>
+              <p class="team-desc">
+                Magíster y Docente Investigadora en Hidrología, Recursos Hídricos y Gestión de Cuencas en la Universidad Regional Amazónica IKIAM. Lidera la dirección técnica y la articulación interinstitucional del proyecto.
+              </p>
+              <span class="team-tag-pill">Mgs. &bull; Hidrología IKIAM</span>
+            </div>
+
+            <!-- Christian Alcocer -->
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">👨‍🏫</div>
+              </div>
+              <h4 class="team-name">Mgs. Christian Fabián Alcocer Castillo</h4>
+              <div class="team-role">Codirector del Proyecto</div>
+              <p class="team-desc">
+                Magíster y Especialista en Educación Ambiental, Pedagogía y Vinculación Comunitaria en IKIAM. Coordinador de los talleres de ciencia ciudadana y de la iniciativa "Yaku Wasi" con la U.E. Spiller.
+              </p>
+              <span class="team-tag-pill">Mgs. &bull; Educación Ambiental</span>
+            </div>
+          </div>
+
+          <!-- 2. Especialistas y Consultores Principales -->
+          <h4 class="team-category-title">
+            <span>⚙️</span> Consultores y Especialistas Clave
+          </h4>
+
+          <div class="team-cards-grid">
+            <!-- Kevin Castro -->
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <img src="assets/img/equipo/foto_kevin_castro.png" alt="Ing. Kevin Castro KACC">
+              </div>
+              <h4 class="team-name">Ing. Kevin Armando Castro Cuichan (KACC)</h4>
+              <div class="team-role">Consultor Especialista Hidroambiental</div>
+              <p class="team-desc">
+                Ingeniero en Ciencias del Agua. Especialista en Hidrología, Hidráulica 2D con HEC-RAS, Modelamiento de Nube de Puntos LiDAR 0.25m, SIG, Calidad de Agua, Evaluación Multicriterio Espacial y formulación del Plan de Restauración.
+              </p>
+              <span class="team-tag-pill">Ing. &bull; Hidráulica & LiDAR</span>
+            </div>
+
+            <!-- Tanya Camalle -->
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">👩‍💼</div>
+              </div>
+              <h4 class="team-name">Ing. Tanya Michelle Camalle Valverde (TMCV)</h4>
+              <div class="team-role">Consultora Especialista Socioambiental</div>
+              <p class="team-desc">
+                Ingeniera Ambiental. Especialista en diagnóstico socioambiental comunitario, cartografía social, sistematización de campo y facilitación de talleres participativos con directivas y moradores de los 14 barrios de Tena.
+              </p>
+              <span class="team-tag-pill">Ing. &bull; Diagnóstico Social</span>
+            </div>
+          </div>
+
+          <!-- 3. Equipo Docente Multidisciplinario IKIAM -->
+          <h4 class="team-category-title">
+            <span>🌿</span> Docentes e Investigadores Multidisciplinarios &bull; IKIAM
+          </h4>
+
+          <div class="team-cards-grid">
+            <!-- Marcela Cabrera -->
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">🔬</div>
+              </div>
+              <h4 class="team-name">Dra. Marcela Cabrera</h4>
+              <div class="team-role">Especialista en Biotecnología</div>
+              <p class="team-desc">
+                Investigación en calidad bacteriológica del agua, procesos biológicos de degradación de contaminantes y soporte analítico de laboratorio acreditado.
+              </p>
+              <span class="team-tag-pill">Dra. &bull; Biotecnología IKIAM</span>
+            </div>
+
+            <!-- Jessica Machado -->
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">🌱</div>
+              </div>
+              <h4 class="team-name">Mgs. Jessica Machado</h4>
+              <div class="team-role">Especialista en Ecosistemas</div>
+              <p class="team-desc">
+                Magíster en Ecosistemas y Biodiversidad. Evaluación de la cobertura vegetal riparia, macroinvertebrados bentónicos acuáticos y propuestas de restauración ecológica asistida.
+              </p>
+              <span class="team-tag-pill">Mgs. &bull; Ecosistemas IKIAM</span>
+            </div>
+          </div>
+
+          <!-- 4. Personal Técnico de Campo e Investigación -->
+          <h4 class="team-category-title">
+            <span>🛠️</span> Personal Técnico de Campo y Modelación
+          </h4>
+
+          <div class="team-cards-grid">
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">👨‍💻</div>
+              </div>
+              <h4 class="team-name">Ing. Cristopher Bolívar Mena Santafé</h4>
+              <div class="team-role">Técnico de Campo & Hidrología</div>
+              <p class="team-desc">Ingeniero en Ciencias del Agua. Monitoreo hidrológico, aforos de caudal, muestreo in-situ y bioindicadores BMWP en las 9 estaciones de la cuenca.</p>
+              <span class="team-tag-pill">Ing. &bull; Monitoreo Hidrológico</span>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">🗺️</div>
+              </div>
+              <h4 class="team-name">Mgs. Bryan Rosero</h4>
+              <div class="team-role">Especialista SIG y Cartografía</div>
+              <p class="team-desc">Magíster en Sistemas de Información Geográfica. Edición de capas espaciales, georreferenciación de predios catastrales y cartografía digital.</p>
+              <span class="team-tag-pill">Mgs. &bull; Geomática & SIG</span>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">🧪</div>
+              </div>
+              <h4 class="team-name">Ing. Karla Bustamante</h4>
+              <div class="team-role">Técnica de Calidad de Agua</div>
+              <p class="team-desc">Ingeniera Ambiental. Soporte técnico en campañas de muestreo físico-químico y análisis microbiológico de laboratorio del estero.</p>
+              <span class="team-tag-pill">Ing. &bull; Laboratorio de Agua</span>
+            </div>
+          </div>
+
+          <!-- 5. Contrapartes Institucionales y Aliados Estratégicos -->
+          <h4 class="team-category-title">
+            <span>🤝</span> Contraparte Institucional y Comunitaria
+          </h4>
+
+          <div class="team-cards-grid">
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">🏛️</div>
+              </div>
+              <h4 class="team-name">Ing. Jonathan Chimbo</h4>
+              <div class="team-role">Contraparte GAD Municipal de Tena</div>
+              <p class="team-desc">Ingeniero del GADM Tena (Dirección de Gestión Ambiental y Alcantarillado). Articulación técnica municipal para obras de saneamiento y mitigación.</p>
+              <span class="team-tag-pill">Ing. &bull; GADM Tena</span>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">💧</div>
+              </div>
+              <h4 class="team-name">Ing. Kevin Shiguango</h4>
+              <div class="team-role">Contraparte Técnica Hidrológica</div>
+              <p class="team-desc">Ingeniero en Recursos Hídricos. Contraparte técnica para validación de instrumentos de gestión de cuenca y gobernanza local.</p>
+              <span class="team-tag-pill">Ing. &bull; Hidrología Cantonal</span>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">📚</div>
+              </div>
+              <h4 class="team-name">Ing. Tanya Mier</h4>
+              <div class="team-role">Acompañamiento Socioambiental</div>
+              <p class="team-desc">Ingeniera Ambiental e investigadora en FLACSO Ecuador. Asesoría metodológica en gobernanza territorial y procesos participativos comunitarios.</p>
+              <span class="team-tag-pill">Ing. &bull; FLACSO Ecuador</span>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-banner"></div>
+              <div class="team-avatar-box">
+                <div class="team-avatar-fallback">🎓</div>
+              </div>
+              <h4 class="team-name">U.E. Monseñor Maximiliano Spiller</h4>
+              <div class="team-role">Comunidad Educativa Aliada</div>
+              <p class="team-desc">Autoridades directivas, docentes y estudiantes participantes activos en la iniciativa de ciencia ciudadana y educación ambiental "Yaku Wasi".</p>
+              <span class="team-tag-pill">Comunidad Educativa</span>
+            </div>
+          </div>
+
+          <!-- Vitrina de Logotipos Institucionales Oficiales -->
+          <div class="allies-logo-shelf">
+            <h4>Alianzas Institucionales Comprometidas</h4>
+            <div class="allies-grid-logos">
+              <div class="ally-logo-item">
+                <img src="assets/img/logos/logo_ikiam.png" alt="Universidad Ikiam">
+                <span>Universidad IKIAM</span>
+              </div>
+              <div class="ally-logo-item">
+                <img src="assets/img/logos/logo_gadm_tena.png" alt="GAD Municipal de Tena">
+                <span>GAD Municipal Tena</span>
+              </div>
+              <div class="ally-logo-item">
+                <img src="assets/img/logos/logo_gad_napo.png" alt="GAD Provincial de Napo">
+                <span>GAD Provincial Napo</span>
+              </div>
+              <div class="ally-logo-item">
+                <img src="assets/img/logos/yaku_wasi_logo.png" alt="Iniciativa Yaku Wasi">
+                <span>Yaku Wasi &bull; Spiller</span>
+              </div>
+              <div class="ally-logo-item">
+                <img src="assets/img/logos/logo_maate.png" alt="Ministerio del Ambiente MAATE">
+                <span>MAATE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navegación de Pestaña -->
+          <div class="tab-navigation-footer">
+            <button class="btn-nav-tab" data-switch-tab="tab-galeria">
+              <span>&larr;</span> <span>Anterior: Galería de Fotos</span>
+            </button>
+            <button class="btn-nav-tab primary-nav" data-switch-tab="tab-visor">
+              <span>Siguiente: Visor Geoespacial WebGIS</span> <span>&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- ====================================================================
+         PESTAÑA 5: VISOR GEOESPACIAL (WEBGIS EMBEBIDO)
+         ==================================================================== -->
+    <div id="tab-visor" class="tab-pane">
+      
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-pill">Herramienta Interactiva en Vivo</span>
+            <h3 class="section-title">Visor Geoespacial WebGIS de la Cuenca</h3>
+            <p class="section-desc">
+              Explora las 14 capas temáticas georreferenciadas en WGS84: consulta estaciones de monitoreo, ubica las 24 descargas residuales con fotografías de campo y examina los 754 polígonos de zonificación de restauración.
+            </p>
+          </div>
+
+          <!-- Marco del Visor Embebido -->
+          <div class="visor-embed-container">
+            <div class="visor-embed-header">
+              <div class="visor-embed-title">
+                <h3>🗺️ WebGIS Interactivo: Estero Paushiyaku</h3>
+                <p>Navega directamente con el mapa satelital / callejero de alta resolución</p>
+              </div>
+              <div>
+                <a href="visor.html" target="_blank" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.88rem;">
+                  <span>⛶</span> Abrir en Pantalla Completa
+                </a>
+              </div>
+            </div>
+            
+            <div class="visor-frame-wrapper">
+              <iframe id="visor-iframe" src="visor.html" title="Visor Geoespacial Guardianes del Paushiyaku"></iframe>
+            </div>
+          </div>
+
+          <!-- Capas Destacadas en el Visor -->
+          <div class="section-head" style="margin-top: 30px;">
+            <span class="section-pill">Catálogo de Información Geográfica</span>
+            <h3 class="section-title">Capas Oficiales Integradas en el WebGIS</h3>
+          </div>
+
+          <div class="objectives-cards-grid">
+            <div class="obj-card">
+              <span class="obj-tag">Hidrografía & Cuenca</span>
+              <h4>Red Fluvial y Subcuencas HEC-HMS</h4>
+              <p>Límite de microcuenca (486.2 ha), polígono del cauce fluvial, eje fluvial Talweg con calados medios de diseño y retiros legales de 30m y 50m.</p>
+            </div>
+
+            <div class="obj-card">
+              <span class="obj-tag">Saneamiento Ambiental</span>
+              <h4>Calidad de Agua & Descargas</h4>
+              <p>9 estaciones de monitoreo con resultados físico-químicos (DQO, OD, coliformes) y 24 puntos de descarga residual sin tratamiento con fotografías de inspección.</p>
+            </div>
+
+            <div class="obj-card">
+              <span class="obj-tag">Riesgos & Planificación</span>
+              <h4>Inundaciones & Zonificación EMC</h4>
+              <p>Mancha hidráulica TR 50 años (HEC-RAS), cruce con 134 predios catastrales y 149 viviendas en riesgo, y los 754 polígonos de zonificación de restauración socioecológica.</p>
+            </div>
+          </div>
+
+          <!-- Navegación de Pestaña -->
+          <div class="tab-navigation-footer">
+            <button class="btn-nav-tab" data-switch-tab="tab-equipo">
+              <span>&larr;</span> <span>Anterior: Nuestro Equipo</span>
+            </button>
+            <button class="btn-nav-tab primary-nav" data-switch-tab="tab-proyecto">
+              <span>Volver a Inicio & Proyecto</span> <span>🌿</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ========================================================================
+       MODAL LIGHTBOX PARA AMPLIACIÓN DE FOTOGRAFÍAS
+       ======================================================================== -->
+  <div id="image-modal" class="modal-backdrop">
+    <div class="modal-content-wrapper">
+      <button id="modal-close" class="modal-close-btn" title="Cerrar">&times;</button>
+      <button id="modal-prev" class="modal-nav-arrow modal-nav-prev" title="Foto Anterior">&#10094;</button>
+      <button id="modal-next" class="modal-nav-arrow modal-nav-next" title="Foto Siguiente">&#10095;</button>
+      <img id="modal-img" src="" alt="Ampliación">
+      <div id="modal-caption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       PIE DE PÁGINA (FOOTER)
+       ======================================================================== -->
+  <footer class="footer-friendly">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Guardianes del Paushiyaku</h4>
+          <p>
+            Proyecto Oficial de Vinculación con la Sociedad impulsado por la Universidad Regional Amazónica IKIAM en estrecha articulación con el GAD Municipal de Tena, GAD Provincial de Napo, U.E. Monseñor Maximiliano Spiller y los 14 barrios ribereños.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegación Rápida</h5>
+          <ul>
+            <li><a href="#" data-switch-tab="tab-proyecto">Proyecto & Visión</a></li>
+            <li><a href="#" data-switch-tab="tab-diagnostico">Diagnóstico & Calidad</a></li>
+            <li><a href="#" data-switch-tab="tab-galeria">Galería Fotográfica</a></li>
+            <li><a href="#" data-switch-tab="tab-equipo">Nuestro Equipo Humano</a></li>
+            <li><a href="#" data-switch-tab="tab-visor">Visor WebGIS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Marco Interinstitucional</h5>
+          <ul>
+            <li>Universidad Regional Amazónica IKIAM</li>
+            <li>GAD Municipal de Tena</li>
+            <li>GAD Provincial de Napo</li>
+            <li>U.E. Monseñor Maximiliano Spiller</li>
+            <li>14 Barrios Urbanos Ribereños</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Guardianes del Paushiyaku &bull; Universidad Regional Amazónica IKIAM &bull; Licencia de Datos Abiertos para la Gestión Ambiental Local en Tena, Napo, Ecuador.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

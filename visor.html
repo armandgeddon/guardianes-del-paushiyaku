@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor Geoespacial | Guardianes del Paushiyaku</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/visor.css">
+  
+  <!-- Favicon / Icon -->
+  <link rel="icon" type="image/png" href="assets/img/logos/yaku_wasi_logo.png">
+</head>
+<body>
+  <div id="app-container">
+    <!-- Navbar Superior -->
+    <header class="visor-navbar">
+      <div class="brand-section">
+        <img src="assets/img/logos/logo_institucional.png" alt="Ikiam Logo" class="nav-logo">
+        <div class="brand-title">
+          <h1>Visor Geoespacial Cuenca Estero Paushiyaku</h1>
+          <span>Tena, Napo &bull; Proyecto de Restauración y Gobernanza Hídrica</span>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="index.html" class="nav-btn btn-portal">
+          <span>&larr;</span> Volver al Portal
+        </a>
+      </div>
+    </header>
+
+    <!-- Cuerpo del Visor -->
+    <main class="visor-body">
+      <!-- Mapa Leaflet -->
+      <div id="map"></div>
+
+      <!-- Botón Flotante para reabrir Barra Lateral -->
+      <button id="open-sidebar" class="sidebar-toggle-btn" style="display: none;">
+        <span>&#9776;</span> Capas y Filtros
+      </button>
+
+      <!-- Barra Lateral de Capas y Búsqueda -->
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <h2><span>🗺️</span> Capas Temáticas</h2>
+          <button id="close-sidebar" class="close-sidebar-btn" title="Ocultar panel">&times;</button>
+        </div>
+
+        <div class="sidebar-search">
+          <div class="search-input-wrapper">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" id="search-input" placeholder="Buscar barrio, estación o descarga..." autocomplete="off">
+          </div>
+          <div id="search-results" class="search-dropdown" style="display: none;"></div>
+        </div>
+
+        <div class="sidebar-content" id="layers-container">
+          <!-- Grupos de capas inyectados dinámicamente desde data_layers.js -->
+        </div>
+      </aside>
+
+      <!-- Selector de Mapas Base -->
+      <div class="basemap-selector">
+        <button class="basemap-opt active" data-basemap="satellite">🛰️ Satélite</button>
+        <button class="basemap-opt" data-basemap="osm">🗺️ Calles</button>
+        <button class="basemap-opt" data-basemap="cartoDark">🌑 Oscuro</button>
+      </div>
+
+      <!-- Controles Flotantes a la Derecha -->
+      <div class="map-floating-controls">
+        <button id="btn-reset-zoom" class="floating-btn" title="Enfocar Microcuenca Completa">
+          <span>🎯</span>
+        </button>
+        <button id="btn-measure" class="floating-btn" title="Herramienta de Medición (Régla)">
+          <span>📏</span>
+        </button>
+        <button id="btn-toggle-legend" class="floating-btn active" title="Alternar Leyenda">
+          <span>🏷️</span>
+        </button>
+      </div>
+
+      <!-- Panel Flotante de Leyenda -->
+      <div id="legend-panel" class="legend-panel">
+        <div class="legend-header">
+          <span>Leyenda Cartográfica</span>
+          <button id="close-legend" style="background:none; border:none; cursor:pointer; font-size:1rem; color:#64748b;">&times;</button>
+        </div>
+        <div id="legend-content" class="legend-body">
+          <!-- Inyectado dinámicamente -->
+        </div>
+      </div>
+
+      <!-- Barra Inferior de Coordenadas y Escala -->
+      <footer class="bottom-bar">
+        <div id="coords-display">Lat: -1.00300 | Lon: -77.80400 | Zoom: 14</div>
+        <div>Datum: WGS84 &bull; CRS: EPSG:4326 (UTM 17S Oficial)</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Definición de Capas y Metadatos -->
+  <script src="js/data_layers.js"></script>
+  <!-- Lógica del Visor -->
+  <script src="js/visor.js"></script>
+</body>
+</html>
